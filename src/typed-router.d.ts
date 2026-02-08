@@ -22,6 +22,8 @@ declare module 'vue-router/auto-routes' {
     '/accounts/components/AccountForm': RouteRecordInfo<'/accounts/components/AccountForm', '/accounts/components/AccountForm', Record<never, never>, Record<never, never>>,
     '/accounts/components/AccountItem': RouteRecordInfo<'/accounts/components/AccountItem', '/accounts/components/AccountItem', Record<never, never>, Record<never, never>>,
     '/accounts/components/TagsInfo': RouteRecordInfo<'/accounts/components/TagsInfo', '/accounts/components/TagsInfo', Record<never, never>, Record<never, never>>,
+    '/settings/': RouteRecordInfo<'/settings/', '/settings', Record<never, never>, Record<never, never>>,
+    '/users/': RouteRecordInfo<'/users/', '/users', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -49,6 +51,14 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/accounts/components/TagsInfo.vue': {
       routes: '/accounts/components/TagsInfo'
+      views: never
+    }
+    'src/pages/settings/index.vue': {
+      routes: '/settings/'
+      views: never
+    }
+    'src/pages/users/index.vue': {
+      routes: '/users/'
       views: never
     }
   }
